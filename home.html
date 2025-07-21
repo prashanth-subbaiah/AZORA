@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZORA - Autonomous Task Handling Emotion-aware Navigation Assistant</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <span class="logo-text">AZORA</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#components" class="nav-link">Components</a></li>
+                <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
+                <li><a href="#impact" class="nav-link">Impact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-bg">
+            <div class="floating-elements">
+                <div class="floating-circle circle-1"></div>
+                <div class="floating-circle circle-2"></div>
+                <div class="floating-circle circle-3"></div>
+            </div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>Powered by Agile Solutions</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-main">AZORA</span>
+                    <span class="title-sub">Autonomous Task Handling Emotion-aware Navigation Assistant</span>
+                </h1>
+                <p class="hero-description">
+                    Empowered by AI, Driven by Purpose. Revolutionary robotics platform combining AI/ML, 
+                    Edge computing, IoT and emotional intelligence in one autonomous system.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary">
+                        <span>Explore Features</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        <span>Watch Demo</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="robot-container">
+                    <div class="robot-core">
+                        <div class="robot-eye left-eye"></div>
+                        <div class="robot-eye right-eye"></div>
+                        <div class="robot-mouth"></div>
+                    </div>
+                    <div class="energy-rings">
+                        <div class="ring ring-1"></div>
+                        <div class="ring ring-2"></div>
+                        <div class="ring ring-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Capabilities</h2>
+                <p class="section-subtitle">Advanced AI-powered features that make AZORA truly autonomous</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
+                    <h3>Voice Commands</h3>
+                    <p>Natural language processing with advanced voice recognition capabilities</p>
+                    <div class="feature-tech">
+                        <span>Vosk</span>
+                        <span>Whisper</span>
+                        <span>ElevenLabs TTS</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Object Detection</h3>
+                    <p>Real-time object recognition and environmental understanding</p>
+                    <div class="feature-tech">
+                        <span>OpenCV</span>
+                        <span>MobileNet SSD</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Smart Navigation</h3>
+                    <p>Autonomous navigation with obstacle avoidance and path planning</p>
+                    <div class="feature-tech">
+                        <span>LiDAR</span>
+                        <span>GPS</span>
+                        <span>Ultrasonic</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-paper"></i>
+                    </div>
+                    <h3>Object Manipulation</h3>
+                    <p>Precise pick and place operations with servo-controlled gripper</p>
+                    <div class="feature-tech">
+                        <span>Servo Motor</span>
+                        <span>Precision Claw</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Assistant</h3>
+                    <p>Intelligent conversation and task assistance powered by LLM</p>
+                    <div class="feature-tech">
+                        <span>LLM APIs</span>
+                        <span>llama.cpp</span>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Emotion Detection</h3>
+                    <p>Real-time emotional state analysis and appropriate responses</p>
+                    <div class="feature-tech">
+                        <span>DeepFace</span>
+                        <span>OpenCV FER</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="components" class="components-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">System Architecture</h2>
+                <p class="section-subtitle">Cutting-edge hardware and software integration</p>
+            </div>
+
+            <div class="architecture-diagram">
+                <div class="central-brain">
+                    <div class="brain-core">
+                        <i class="fas fa-microchip"></i>
+                        <span>Raspberry Pi 4</span>
+                    </div>
+                </div>
+
+                <div class="component-nodes">
+                    <div class="component-node node-1">
+                        <div class="node-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <span>Camera Vision</span>
+                    </div>
+
+                    <div class="component-node node-2">
+                        <div class="node-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <span>Motor Control</span>
+                    </div>
+
+                    <div class="component-node node-3">
+                        <div class="node-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <span>App Interface</span>
+                    </div>
+
+                    <div class="component-node node-4">
+                        <div class="node-icon">
+                            <i class="fas fa-battery-half"></i>
+                        </div>
+                        <span>Power Management</span>
+                    </div>
+
+                    <div class="component-node node-5">
+                        <div class="node-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <span>Task Scheduler</span>
+                    </div>
+
+                    <div class="component-node node-6">
+                        <div class="node-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <span>Safety Systems</span>
+                    </div>
+                </div>
+
+                <div class="connection-lines">
+                    <svg class="connections-svg" viewBox="0 0 800 600">
+                        <path class="connection-line line-1" d="M400,300 L200,150" />
+                        <path class="connection-line line-2" d="M400,300 L600,150" />
+                        <path class="connection-line line-3" d="M400,300 L650,300" />
+                        <path class="connection-line line-4" d="M400,300 L600,450" />
+                        <path class="connection-line line-5" d="M400,300 L200,450" />
+                        <path class="connection-line line-6" d="M400,300 L150,300" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roadmap" class="roadmap-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Development Timeline</h2>
+                <p class="section-subtitle">Systematic approach to building AZORA's capabilities</p>
+            </div>
+
+            <div class="roadmap-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker completed">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Voice Recognition Module</h3>
+                        <p>Advanced speech processing and natural language understanding</p>
+                        <div class="timeline-status">Completed</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker completed">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Camera & Object Detection</h3>
+                        <p>Computer vision system for environmental awareness</p>
+                        <div class="timeline-status">Completed</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker active">
+                        <i class="fas fa-cog fa-spin"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Motor Control via ESP32</h3>
+                        <p>Precise movement control and coordination systems</p>
+                        <div class="timeline-status">In Progress</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker pending">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Obstacle Avoidance</h3>
+                        <p>LiDAR and sensor fusion for safe navigation</p>
+                        <div class="timeline-status">Pending</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker pending">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Pick & Place Actions</h3>
+                        <p>Robotic arm integration and manipulation tasks</p>
+                        <div class="timeline-status">Pending</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker pending">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Full System Integration</h3>
+                        <p>Complete AZORA ecosystem with all capabilities</p>
+                        <div class="timeline-status">Future</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact" class="impact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Real-World Impact</h2>
+                <p class="section-subtitle">Transforming lives through innovative robotics solutions</p>
+            </div>
+
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-number">01</div>
+                    <h3>Mental & Physical Wellness</h3>
+                    <p>AI-powered emotion detection and stress monitoring for proactive health support</p>
+                    <div class="impact-visual">
+                        <div class="wellness-pulse"></div>
+                    </div>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-number">02</div>
+                    <h3>Assists Vulnerable Groups</h3>
+                    <p>Personalized support for elderly, differently-abled individuals and students</p>
+                    <div class="impact-visual">
+                        <div class="support-network"></div>
+                    </div>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-number">03</div>
+                    <h3>Reusable & Scalable Technology</h3>
+                    <p>Adaptable platform for classrooms, healthcare, and elder care applications</p>
+                    <div class="impact-visual">
+                        <div class="scalability-nodes"></div>
+                    </div>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-number">04</div>
+                    <h3>Future Career Development</h3>
+                    <p>Hands-on expertise in AI, Robotics, IoT, and Human-Computer Interaction</p>
+                    <div class="impact-visual">
+                        <div class="career-growth"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-container">
+                        <div class="logo-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <span class="logo-text">AZORA</span>
+                    </div>
+                    <p>Empowered by AI, Driven by Purpose</p>
+                </div>
+                <div class="footer-info">
+                    <div class="footer-section">
+                        <h4>Technology Stack</h4>
+                        <ul>
+                            <li>Raspberry Pi 4</li>
+                            <li>OpenCV & MobileNet</li>
+                            <li>ESP32 Controllers</li>
+                            <li>LiDAR & GPS Navigation</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Applications</h4>
+                        <ul>
+                            <li>Campus Deliveries</li>
+                            <li>Lab Demonstrations</li>
+                            <li>Personal Assistant</li>
+                            <li>Educational Platform</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <p>Presented by Agile Solutions</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>
